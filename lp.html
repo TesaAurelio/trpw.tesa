@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Landing Page Pribadi, Ilmu Komputer FMIPA</title>
+  <meta name="description" content="Profil digital mahasiswa Ilmu Komputer FMIPA: keahlian, proyek kuliah, dan cara menghubungi.">
+  <meta name="author" content="Tesa Aurelio Ginting">
+  <meta name="keywords" content="ilmu komputer, fmipa, mahasiswa, portofolio">
+
+  <meta property="og:title" content="Landing Page Pribadi, Ilmu Komputer FMIPA">
+  <meta property="og:description" content="Kenali profil, keahlian, dan proyek kuliah saya.">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="assets/potret.jpg">
+</head>
+<body>
+
+  <header>
+    <p>Program Studi Ilmu Komputer</p>
+    <h1>Tesa Aurelio Ginting (4253250037)</h1>
+
+    <nav aria-label="Navigasi halaman">
+      <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#riwayat">Riwayat Proyek</a></li>
+        <li><a href="#tanya">Tanya Jawab</a></li>
+        <li><a href="#formulir">Formulir</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="profil">
+      <h2>Profil Singkat</h2>
+
+      <figure>
+        <img src="potret.jpg.jpg" alt="foto">
+        <figcaption>Tesa Aurelio Ginting Foto Formal, <time datetime="2026-08">November 2025</time></figcaption>
+      </figure>
+
+      <p>
+        Lulusan SMA dengan Jurusan MIPA yang saat ini melanjutkan studi di Universitas Negeri Medan pada Program Studi Ilmu Komputer, FMIPA. Fokus belajar saat ini
+        ada pada pengembangan web, mulai dari struktur dokumen HTML yang benar
+        hingga logika pemrograman di balik antarmuka yang interaktif.
+      </p>
+
+      <address>
+        Universitas Negeri Medan<br>
+        Email: <a href="mailto:nama@kampus.ac.id">admin@unimed.ac.id</a>
+      </address>
+    </section>
+
+    <section id="keahlian">
+      <h2>Keahlian</h2>
+
+      <article>
+        <h3>Bahasa</h3>
+        <dl>
+          <dt>Saat ini belum ada bahasa yang ahli, kedepannya akan belajar lagi.</dt>
+        </dl>
+      </article>
+
+      <article>
+        <h3>Sedang Dipelajari</h3>
+        <p>Mempelajari HTML, CSS, dan JavaScript untuk dasar pada Mata Kuliah Pemrograman Web.</p>
+      </article>
+    </section>
+
+    <section id="riwayat">
+      <h2>Riwayat Proyek</h2>
+
+      <article>
+        <h3>Tugas Rutin 1, Landing Page Pribadi</h3>
+        <p>Membangun halaman identitas pribadi dengan struktur HTML5 yang valid menurut W3C, sebagai tugas mata kuliah Pemrograman Web.</p>
+        <p><mark>Status: dalam pengerjaan</mark></p>
+      </article>
+    </section>
+
+    <section id="tanya">
+      <h2>Tanya Jawab</h2>
+
+      <details>
+        <summary>Kenapa halaman ini dibuat tanpa CSS?</summary>
+        <p>Karena fokus tugas ini adalah menguji struktur HTML5 semantik yang valid dan aksesibel, bukan tampilan visual.</p>
+      </details>
+
+      <details>
+        <summary>Apa itu HTML semantik?</summary>
+        <p>Penggunaan tag yang menjelaskan makna kontennya sendiri, seperti <code>&lt;nav&gt;</code> untuk navigasi, bukan sekadar <code>&lt;div&gt;</code> generik.</p>
+      </details>
+    </section>
+
+    <section id="formulir">
+      <h2>Kirim Pesan</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Data Pengirim</legend>
+
+          <p>
+            <label for="nama_pengirim">Nama Lengkap</label><br>
+            <input type="text" id="nama_pengirim" name="nama_pengirim" required minlength="3" maxlength="60" placeholder="Tulis nama lengkap">
+          </p>
+
+          <p>
+            <label for="email_pengirim">Alamat Email</label><br>
+            <input type="email" id="email_pengirim" name="email_pengirim" required placeholder="nama@email.com">
+          </p>
+
+          <p>
+            <label for="no_hp">Nomor HP</label><br>
+            <input type="tel" id="no_hp" name="no_hp" pattern="[0-9]{10,13}" placeholder="08xxxxxxxxxx">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tambahan</legend>
+
+          <p>
+            <label for="tanggal_lahir">Tanggal Lahir</label><br>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+          </p>
+
+          <p>
+            <label for="warna_tema">Warna Favorit</label><br>
+            <input type="color" id="warna_tema" name="warna_tema" value="#1e3a8a">
+          </p>
+
+          <p>
+            <label for="tingkat_semangat">Tingkat Kesulitan Belajar Web (1&ndash;10)</label><br>
+            <input type="range" id="tingkat_semangat" name="tingkat_semangat" min="1" max="10" step="1" value="7">
+          </p>
+
+          <p>
+            <label for="portofolio">Tautan Portofolio</label><br>
+            <input type="url" id="portofolio" name="portofolio" placeholder="https://github.com/usn">
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="pesan_isi">Isi Pesan</label><br>
+          <textarea id="pesan_isi" name="pesan_isi" rows="5" required placeholder="Tulis pesan Anda di sini"></textarea>
+        </p>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Bersihkan Formulir</button>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Catatan</h2>
+      <p>Halaman ini adalah bagian dari tugas mata kuliah Pemrograman Web, disusun untuk memenuhi standar struktur HTML5 semantik dan validasi W3C.</p>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p><time datetime="2026">2026</time> Tesa Aurelio Ginting, Program Studi Ilmu Komputer, FMIPA.</p>
+  </footer>
+
+</body>
+</html>
